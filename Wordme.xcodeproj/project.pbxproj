@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		352109AC2802ED2D007BEAFB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 352109AB2802ED2D007BEAFB /* Preview Assets.xcassets */; };
 		35210A082802EEB9007BEAFB /* LetterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352109F82802EEB8007BEAFB /* LetterView.swift */; };
-		35210A0A2802EEB9007BEAFB /* Model in Resources */ = {isa = PBXBuildFile; fileRef = 352109FA2802EEB8007BEAFB /* Model */; };
 		35210A0C2802EEB9007BEAFB /* WordmeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352109FC2802EEB8007BEAFB /* WordmeApp.swift */; };
 		35210A0D2802EEB9007BEAFB /* Letterfy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352109FD2802EEB8007BEAFB /* Letterfy.swift */; };
 		35210A0E2802EEB9007BEAFB /* Extensions in Resources */ = {isa = PBXBuildFile; fileRef = 352109FE2802EEB8007BEAFB /* Extensions */; };
@@ -21,15 +20,15 @@
 		35210A162802EEB9007BEAFB /* HowToPlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35210A062802EEB8007BEAFB /* HowToPlay.swift */; };
 		35210A172802EEB9007BEAFB /* WordmeGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35210A072802EEB8007BEAFB /* WordmeGame.swift */; };
 		35210A382802F052007BEAFB /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35210A372802F052007BEAFB /* Color.swift */; };
-		35210A3D2802F069007BEAFB /* WordmeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35210A3B2802F069007BEAFB /* WordmeModel.swift */; };
-		35210A3E2802F069007BEAFB /* StatisticsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35210A3C2802F069007BEAFB /* StatisticsModel.swift */; };
-		35210A3F2802F069007BEAFB /* SettingsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35210A3A2802F069007BEAFB /* SettingsModel.swift */; };
 		35210A422802F0D3007BEAFB /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35210A412802F0D3007BEAFB /* Constants.swift */; };
 		35210A452802F0D6007BEAFB /* UserDefaultsUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35210A442802F0D6007BEAFB /* UserDefaultsUtils.swift */; };
 		35210A4C2802F21B007BEAFB /* WordmeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35210A4B2802F21B007BEAFB /* WordmeView.swift */; };
 		35210A4F2802F241007BEAFB /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35210A4E2802F241007BEAFB /* SettingsView.swift */; };
 		35210A532802F2B6007BEAFB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35210A522802F2B6007BEAFB /* Assets.xcassets */; };
 		35210A562802F42D007BEAFB /* 4-letter-words.txt in Resources */ = {isa = PBXBuildFile; fileRef = 35210A552802F42D007BEAFB /* 4-letter-words.txt */; };
+		6386B26D28157C62001E6E93 /* WordmeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6386B26C28157C62001E6E93 /* WordmeModel.swift */; };
+		6386B26F28157C79001E6E93 /* SettingsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6386B26E28157C79001E6E93 /* SettingsModel.swift */; };
+		6386B27328157CEE001E6E93 /* StatisticsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6386B27228157CEE001E6E93 /* StatisticsModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,7 +37,6 @@
 		352109AD2802ED2D007BEAFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		352109F72802EEB8007BEAFB /* Wordme-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Wordme-Bridging-Header.h"; sourceTree = "<group>"; };
 		352109F82802EEB8007BEAFB /* LetterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LetterView.swift; sourceTree = "<group>"; };
-		352109FA2802EEB8007BEAFB /* Model */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Model; sourceTree = "<group>"; };
 		352109FC2802EEB8007BEAFB /* WordmeApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordmeApp.swift; sourceTree = "<group>"; };
 		352109FD2802EEB8007BEAFB /* Letterfy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Letterfy.swift; sourceTree = "<group>"; };
 		352109FE2802EEB8007BEAFB /* Extensions */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Extensions; sourceTree = "<group>"; };
@@ -50,15 +48,15 @@
 		35210A062802EEB8007BEAFB /* HowToPlay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HowToPlay.swift; sourceTree = "<group>"; };
 		35210A072802EEB8007BEAFB /* WordmeGame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordmeGame.swift; sourceTree = "<group>"; };
 		35210A372802F052007BEAFB /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
-		35210A3A2802F069007BEAFB /* SettingsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsModel.swift; sourceTree = "<group>"; };
-		35210A3B2802F069007BEAFB /* WordmeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordmeModel.swift; sourceTree = "<group>"; };
-		35210A3C2802F069007BEAFB /* StatisticsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsModel.swift; sourceTree = "<group>"; };
 		35210A412802F0D3007BEAFB /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		35210A442802F0D6007BEAFB /* UserDefaultsUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsUtils.swift; sourceTree = "<group>"; };
 		35210A4B2802F21B007BEAFB /* WordmeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordmeView.swift; sourceTree = "<group>"; };
 		35210A4E2802F241007BEAFB /* SettingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		35210A522802F2B6007BEAFB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		35210A552802F42D007BEAFB /* 4-letter-words.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "4-letter-words.txt"; path = "../../cs193p_2021/Wordle/Wordle/4-letter-words.txt"; sourceTree = "<group>"; };
+		6386B26C28157C62001E6E93 /* WordmeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordmeModel.swift; sourceTree = "<group>"; };
+		6386B26E28157C79001E6E93 /* SettingsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsModel.swift; sourceTree = "<group>"; };
+		6386B27228157CEE001E6E93 /* StatisticsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatisticsModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,9 +93,6 @@
 				35210A4E2802F241007BEAFB /* SettingsView.swift */,
 				35210A442802F0D6007BEAFB /* UserDefaultsUtils.swift */,
 				35210A412802F0D3007BEAFB /* Constants.swift */,
-				35210A3A2802F069007BEAFB /* SettingsModel.swift */,
-				35210A3C2802F069007BEAFB /* StatisticsModel.swift */,
-				35210A3B2802F069007BEAFB /* WordmeModel.swift */,
 				35210A372802F052007BEAFB /* Color.swift */,
 				35210A552802F42D007BEAFB /* 4-letter-words.txt */,
 				352109FF2802EEB8007BEAFB /* 5-letter-words.txt */,
@@ -108,7 +103,7 @@
 				35210A002802EEB8007BEAFB /* KeyboardView.swift */,
 				352109FD2802EEB8007BEAFB /* Letterfy.swift */,
 				352109F82802EEB8007BEAFB /* LetterView.swift */,
-				352109FA2802EEB8007BEAFB /* Model */,
+				6386B27428157D03001E6E93 /* Model */,
 				35210A022802EEB8007BEAFB /* StatisticsView.swift */,
 				35210A012802EEB8007BEAFB /* Utils */,
 				352109FC2802EEB8007BEAFB /* WordmeApp.swift */,
@@ -126,6 +121,16 @@
 				352109AB2802ED2D007BEAFB /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		6386B27428157D03001E6E93 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6386B26C28157C62001E6E93 /* WordmeModel.swift */,
+				6386B26E28157C79001E6E93 /* SettingsModel.swift */,
+				6386B27228157CEE001E6E93 /* StatisticsModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -190,7 +195,6 @@
 				35210A0F2802EEB9007BEAFB /* 5-letter-words.txt in Resources */,
 				35210A0E2802EEB9007BEAFB /* Extensions in Resources */,
 				352109AC2802ED2D007BEAFB /* Preview Assets.xcassets in Resources */,
-				35210A0A2802EEB9007BEAFB /* Model in Resources */,
 				35210A532802F2B6007BEAFB /* Assets.xcassets in Resources */,
 				35210A112802EEB9007BEAFB /* Utils in Resources */,
 			);
@@ -203,19 +207,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				35210A3F2802F069007BEAFB /* SettingsModel.swift in Sources */,
 				35210A422802F0D3007BEAFB /* Constants.swift in Sources */,
+				6386B26D28157C62001E6E93 /* WordmeModel.swift in Sources */,
 				35210A082802EEB9007BEAFB /* LetterView.swift in Sources */,
-				35210A3D2802F069007BEAFB /* WordmeModel.swift in Sources */,
 				35210A4C2802F21B007BEAFB /* WordmeView.swift in Sources */,
 				35210A4F2802F241007BEAFB /* SettingsView.swift in Sources */,
 				35210A0C2802EEB9007BEAFB /* WordmeApp.swift in Sources */,
+				6386B26F28157C79001E6E93 /* SettingsModel.swift in Sources */,
 				35210A0D2802EEB9007BEAFB /* Letterfy.swift in Sources */,
 				35210A382802F052007BEAFB /* Color.swift in Sources */,
 				35210A142802EEB9007BEAFB /* Cardify.swift in Sources */,
 				35210A172802EEB9007BEAFB /* WordmeGame.swift in Sources */,
-				35210A3E2802F069007BEAFB /* StatisticsModel.swift in Sources */,
 				35210A122802EEB9007BEAFB /* StatisticsView.swift in Sources */,
+				6386B27328157CEE001E6E93 /* StatisticsModel.swift in Sources */,
 				35210A102802EEB9007BEAFB /* KeyboardView.swift in Sources */,
 				35210A452802F0D6007BEAFB /* UserDefaultsUtils.swift in Sources */,
 				35210A162802EEB9007BEAFB /* HowToPlay.swift in Sources */,

@@ -45,7 +45,7 @@ enum WordmeError : Equatable {
     }
 }
 
-struct WordmeModel {
+struct WordmeModel : Codable {
     public var status : [String : LetterType] = [:]
     public var words5 : [String] = []
     public var guesses : Array <Array <WordmeLetter> >
@@ -78,6 +78,21 @@ struct WordmeModel {
         solution = words5.randomElement()!
         solved = false
         gameover = false
+    }
+    
+    var json: Data? {
+        return try? JSONEncoder().encode(self)
+    }
+    
+    init?(json: Data?) {
+        if json != nil, let newWordmeModel = try? {
+            JSONDecoder().decode(WordmeModel.self, from: json!) {
+                self = newWordmeModel
+                print("json<<=\(self.json?.utf8 ?? "nil")")
+            }
+        } else {
+            return nil
+        }
     }
     
     mutating func newgame() {

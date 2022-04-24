@@ -6,10 +6,11 @@
 //
 
 import SwiftUI
+import Combine
 
 class WordmeGame : ObservableObject {
     
-    @Published private var model: WordmeModel = WordmeGame.createWordmeGame()
+    @Published private var model: WordmeModel
     @Published private var stat: Statistics = Statistics()
     
     @Published var wordmeError : WordmeError = WordmeError.NOERROR
@@ -26,6 +27,21 @@ class WordmeGame : ObservableObject {
     private struct WordmeGameConstants {
         static let scoringDuration: Double = 2
     }
+    let id: UUID
+    
+    private var autosaveCancellable : AnyCancellable?
+    init(id: UUID? = nil) {
+        self.id = id ?? UUID()
+        let defaultKey =
+            "WordmeGame.\(self.id.uuidString)"
+        model = WordmeModel(json:
+                                UserDefaults.standard.data(forKey: defaultKey)) ?? WordmeModel()
+        autosaveCancellable = $model.sink { wordemeModel in
+            UserDefaults.standard.set( wordemeModel.json,
+              forKey: defaultKey)
+        }
+    }
+    
     
     // MARK: - Access to the model
     var guesses:  Array <Array <WordmeLetter> >{
