@@ -44,7 +44,7 @@ enum WordmeError : Equatable {
         }
     }
 }
-
+// ref: https://developer.apple.com/documentation/foundation/archives_and_serialization/encoding_and_decoding_custom_types
 struct WordmeModel : Codable {
     public var status : [String : LetterType] = [:]
     public var words5 : [String] = []
@@ -80,17 +80,26 @@ struct WordmeModel : Codable {
         gameover = false
     }
     
+    init(from decoder:Decoder) throws {
+        self.init();
+    }
+    
+    func encode(to encoder: Encoder) throws {
+        
+    }
+    
     var json: Data? {
         return try? JSONEncoder().encode(self)
     }
     
     init?(json: Data?) {
-        if json != nil, let newWordmeModel = try? {
+        if json != nil, let newWordmeModel = try?
             JSONDecoder().decode(WordmeModel.self, from: json!) {
                 self = newWordmeModel
-                print("json<<=\(self.json?.utf8 ?? "nil")")
-            }
-        } else {
+            let str = String(decoding: newWordmeModel.json!, as: UTF8.self)
+            print("\(str)");
+        }
+        else {
             return nil
         }
     }
